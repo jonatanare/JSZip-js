@@ -1,0 +1,68 @@
+// /pages/api/files.js
+export default function handler(req, res) {
+    res.status(200).json([
+        {
+            "_id": "63e418b3f2b71ef3b69e585a",
+            "curp": "AEHJ960409HCSRRN01",
+            "curp_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1675892914935-calculadora-financiera-landrada.jpg",
+            "keyCurp": "1675892914935-calculadora-financiera-landrada.jpg",
+            "photo": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1675892914936-buen-momento-para-invertir.jpg",
+            "keyPhoto": "1675892914936-buen-momento-para-invertir.jpg",
+            "rfc_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1675892914940-el-cielo.png",
+            "keyRfc": "1675892914940-el-cielo.png",
+            "address_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1675892914941-plusvalia-en-terrenos-blog-landrada.jpg",
+            "keyAddress": "1675892914941-plusvalia-en-terrenos-blog-landrada.jpg",
+            "ine_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1675892914947-plusvalia-en-terrenos-blog-landrada.jpg",
+            "keyIne": "1675892914947-plusvalia-en-terrenos-blog-landrada.jpg",
+            "bank_number": "78945612321",
+            "clabeBank_file": "987654321",
+            "bank_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1675892914957-puerto-cancun-densidad-desarrollos-blog-landrada.jpg",
+            "keyBank": "1675892914957-puerto-cancun-densidad-desarrollos-blog-landrada.jpg",
+            "createdAt": "2023-02-08T21:48:35.135Z",
+            "updatedAt": "2023-02-08T21:48:35.135Z",
+            "__v": 0
+        },
+        {
+            "_id": "641e176cfda8eca4e02142c0",
+            "curp": "ASJDKJDKLKDOLKSLKS",
+            "curp_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1679693675974-footer.png",
+            "keyCurp": "1679693675974-footer.png",
+            "photo": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1679693675975-50descuento.png",
+            "keyPhoto": "1679693675975-50descuento.png",
+            "rfc_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1679693675982-50descuento.png",
+            "keyRfc": "1679693675982-50descuento.png",
+            "address_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1679693675987-footer.png",
+            "keyAddress": "1679693675987-footer.png",
+            "ine_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1679693675988-footer.png",
+            "keyIne": "1679693675988-footer.png",
+            "bank_number": "23456543",
+            "clabeBank_file": "2343243243234234232",
+            "bank_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1679693676000-50descuento.png",
+            "keyBank": "1679693676000-50descuento.png",
+            "createdAt": "2023-03-24T21:34:36.148Z",
+            "updatedAt": "2023-03-24T21:34:36.148Z",
+            "__v": 0
+        },
+        {
+            "_id": "6435dc76758d02243b7ff601",
+            "curp": "ASJDKJDKLKDOLKSLKS",
+            "curp_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1681251444809-boats-night.jpeg",
+            "keyCurp": "1681251444809-boats-night.jpeg",
+            "photo": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1681251444814-camara-de-comercio.jpg",
+            "keyPhoto": "1681251444814-camara-de-comercio.jpg",
+            "rfc_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1681251444814-camara-de-comercio.jpg",
+            "keyRfc": "1681251444814-camara-de-comercio.jpg",
+            "address_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1681251444815-camara-de-comercio.jpg",
+            "keyAddress": "1681251444815-camara-de-comercio.jpg",
+            "ine_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1681251444815-camara-de-comercio.jpg",
+            "keyIne": "1681251444815-camara-de-comercio.jpg",
+            "bank_number": "23456543",
+            "clabeBank_file": "2343243243234234232",
+            "bank_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1681251444815-camara-de-comercio.jpg",
+            "keyBank": "1681251444815-camara-de-comercio.jpg",
+            "createdAt": "2023-04-11T22:17:26.010Z",
+            "updatedAt": "2023-04-11T22:17:26.010Z",
+            "__v": 0
+        }
+    ]);
+  }
