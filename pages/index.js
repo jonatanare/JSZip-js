@@ -4,16 +4,24 @@ import JSZip from "jszip";
 import { saveAs } from "file-saver";
 
 import styles from "../styles/Home.module.css";
+import JSZipUtils from "jszip-utils";
 
 export default function Home() {
   const [files, setFiles] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const getFiles = async () => {
-    const res = await fetch("/api/files");
-    const files = await res.json();
+    const res = await fetch("https://api.lagunaskuche.mx/files",{
+      method: 'GET',
+      headers: {
+        Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTg5ZmNiNTcxMDA5OGNmMDZkNGM4NyIsInJvbGUiOiJyaCIsImlhdCI6MTY4MTM5NTU0NywiZXhwIjoxNjgxODI3NTQ3fQ.pDFcKH7t7jzlIm2fxfMKgeQg9GFm3jreqwV5mefOBT8'
+      },
+      mode: 'cors'
+    });
+    const dataJson = await res.json(); 
+    const data = dataJson.data.files
 
-    setFiles(files);
+    setFiles(data);
   };
 
   useEffect(() => {
@@ -22,30 +30,37 @@ export default function Home() {
   }, []);
 
   const downloadResourcesOnClick = async () => {
-    setLoading(true);
+
     try {
       const zip = new JSZip();
-      const remoteZips = files.map(async (file) => {
-        const response = await fetch(file.curp_file);
-        const data = await response.blob();
-        zip.file(`${file.keyCurp}`, data);
+      // const remoteZips = files.map(async (file) => {
 
-        return data;
+        
+      // })
+
+      const CURP = 'https://my-assets-jona.s3.amazonaws.com/cuando-es-buen-momento-para-invertir-en-un-terreno.jpg'
+
+      const PHOTO = 'https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1675892914936-buen-momento-para-invertir.jpg'
+
+      JSZipUtils.getBinaryContent(CURP, function (err, data) {
+        zip.file('Jonatan' + " - CURP" + ".jpg", data, {
+          binary: true,
+        });
+      });
+      JSZipUtils.getBinaryContent(PHOTO, function (err, data) {
+        zip.file('Jonatan' + " - PHOTO" + ".jpg", data, {
+          binary: true,
+        });
       });
 
-      Promise.all(remoteZips)
-        .then(() => {
-          zip.generateAsync({ type: "blob" }).then((content) => {
-            // give the zip file a name
-            saveAs(content, "zip-download-next-js.zip");
-          });
-          setLoading(false);
-        })
-        .catch(() => {
-          setLoading(false);
+      JSZipUtils.getBinaryContent(CURP, function () {
+        zip.generateAsync({ type: "blob" }).then(function (content) {
+          saveAs(content, 'Jonatan' + " - Documentos");
         });
+      });
+  
 
-      setLoading(false);
+      // setLoading(false);
     } catch (error) {
       setLoading(false);
       console.log(error.message);

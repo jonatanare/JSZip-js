@@ -4,7 +4,7 @@ export default function handler(req, res) {
         {
             "_id": "63e418b3f2b71ef3b69e585a",
             "curp": "AEHJ960409HCSRRN01",
-            "curp_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1675892914935-calculadora-financiera-landrada.jpg",
+            "curp_file": "https://my-assets-jona.s3.amazonaws.com/cuando-es-buen-momento-para-invertir-en-un-terreno.jpg",
             "keyCurp": "1675892914935-calculadora-financiera-landrada.jpg",
             "photo": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1675892914936-buen-momento-para-invertir.jpg",
             "keyPhoto": "1675892914936-buen-momento-para-invertir.jpg",
@@ -25,7 +25,7 @@ export default function handler(req, res) {
         {
             "_id": "641e176cfda8eca4e02142c0",
             "curp": "ASJDKJDKLKDOLKSLKS",
-            "curp_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1679693675974-footer.png",
+            "curp_file": "https://my-assets-jona.s3.amazonaws.com/cuando-es-buen-momento-para-invertir-en-un-terreno.jpg",
             "keyCurp": "1679693675974-footer.png",
             "photo": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1679693675975-50descuento.png",
             "keyPhoto": "1679693675975-50descuento.png",
@@ -46,7 +46,7 @@ export default function handler(req, res) {
         {
             "_id": "6435dc76758d02243b7ff601",
             "curp": "ASJDKJDKLKDOLKSLKS",
-            "curp_file": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1681251444809-boats-night.jpeg",
+            "curp_file": "https://my-assets-jona.s3.amazonaws.com/cuando-es-buen-momento-para-invertir-en-un-terreno.jpg",
             "keyCurp": "1681251444809-boats-night.jpeg",
             "photo": "https://landrada-advisors-bucket.s3.us-east-1.amazonaws.com/1681251444814-camara-de-comercio.jpg",
             "keyPhoto": "1681251444814-camara-de-comercio.jpg",
